@@ -1,0 +1,33 @@
+package course;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("Digite o código da peça 1: ");
+		int codPeca1 = teclado.nextInt();
+		System.out.print("Digite o número de peças 1: ");
+		int numPeca1 = teclado.nextInt();
+		System.out.print("Digite o valor da peça 1: ");
+		double valPeca1 = teclado.nextDouble();
+		
+		System.out.print("Digite o código da peça 2: ");
+		int codPeca2 = teclado.nextInt();
+		System.out.print("Digite o número de peças 2: ");
+		int numPeca2 = teclado.nextInt();
+		System.out.print("Digite o valor da peça 2: ");
+		double valPeca2 = teclado.nextDouble();
+		
+		double total = numPeca1 * valPeca1 + numPeca2 * valPeca2;
+		
+		System.out.printf("Valor a pagar R$ %.2f%n", total);
+		
+		teclado.close();
+	}
+
+}

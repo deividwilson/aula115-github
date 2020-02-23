@@ -1,0 +1,15 @@
+package com.casting;
+
+public class Casting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double a = 5;
+		double b = 2;
+		int resultado =  5/2;
+		System.out.println(resultado);
+
+	}
+
+}

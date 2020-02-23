@@ -1,0 +1,35 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Produto;
+
+public class Programam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner teclado = new Scanner(System.in);
+		
+		int n = teclado.nextInt();
+		Produto[] vect = new Produto[n];
+		
+		for(int i = 0; i<n; i++) {
+			teclado.nextLine();
+			String nome = teclado.nextLine();
+			double preco = teclado.nextDouble();
+		    vect[i] = new Produto(nome,preco);
+		}
+		double soma = 0.0;
+		for(int i = 0; i<n; i++) {
+			soma += vect[i].getPreco();
+		}
+		double avg = soma / n;
+		
+		System.out.printf("Média %.2f%n",avg);
+		
+		teclado.close();
+	}
+
+}

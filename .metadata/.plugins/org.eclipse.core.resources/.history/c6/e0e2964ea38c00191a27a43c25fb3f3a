@@ -1,0 +1,16 @@
+package com.casting;
+
+public class Casting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a, b;
+		String s = "33";
+		a = Integer.parseInt(s);
+		int resultado = (int) 5/2;
+		System.out.println(a);
+
+	}
+
+}
